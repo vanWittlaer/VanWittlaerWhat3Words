@@ -1,0 +1,29 @@
+{% sw_extends "@Storefront/storefront/component/address/address-form.html.twig" %}
+
+{% block component_address_form_country %}
+    {{ parent() }}
+    </div>
+    <div class="{{ formRowClass }}">
+        <div class="form-group col-md-6">
+            <label class="form-label"
+                   for="{{ prefix }}_what3words">
+                {{ "vanwittlaer.w3w.label"|trans|sw_sanitize }}
+            </label>
+            <what3words-autosuggest
+                    api_key="{{ config('VanWittlaerWhatThreeWords.config.apiKey') }}"
+                    headers='{"X-W3W-Plugin":"VanWittlaerWhat3Words_shopware_what3words"}'
+                    variant="inherit"
+                    language="{{ page.header.activeLanguage.translationCode.code|slice(0,2)|upper }}"
+                    invalid_address_error_message="{{ 'vanwittlaer.w3w.invalid_address_error_message'|trans|sw_sanitize }}"
+                    {% if page.address %}clip_to_country="{{ page.address.country.iso }}"{% endif %}
+            >
+                <input type="text"
+                       class="form-control"
+                       id="{{ prefix }}_what3words"
+                       placeholder="{{ 'vanwittlaer.w3w.placeholder'|trans|sw_sanitize }}"
+                       name="{{ prefix }}[customFields][what3words]"
+                       value="{{ data.get('customFields')['what3words'] }}"
+                >
+            </what3words-autosuggest>
+        </div>
+{% endblock %}

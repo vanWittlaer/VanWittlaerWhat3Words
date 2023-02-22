@@ -1,0 +1,22 @@
+{% sw_extends "@Storefront/storefront/component/analytics.html.twig" %}
+
+{% block component_head_analytics %}
+    {{ parent() }}
+    {% if activeRoute in [
+        'frontend.account.address.create.page',
+        'frontend.account.address.edit.page',
+        'frontend.account.home.page',
+        'frontend.account.login.page',
+        'frontend.checkout.confirm.page',
+        'frontend.checkout.register.page',
+    ] %}
+        <script
+                type="module"
+                src="https://cdn.what3words.com/javascript-components@4-latest/dist/what3words/what3words.esm.js"
+        />
+        <script
+                nomodule
+                src="https://cdn.what3words.com/javascript-components@4-latest/dist/what3words/what3words.js?key={{ config('VanWittlaerWhatThreeWords.config.apiKey') }}"
+        />
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,40 @@
+{
+  "name": "vanwittlaer/what-three-words",
+  "description": "Add a ///what.3.words address field to customer address data and forms",
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "VanWittlaer GmbH"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.4"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "VanWittlaer\\WhatThreeWords\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "VanWittlaer\\WhatThreeWords\\VanWittlaerWhatThreeWords",
+    "copyright": "VanWittlaer GmbH",
+    "label": {
+      "de-DE": "///what3words",
+      "en-GB": "///what3words"
+    },
+    "description": {
+      "de-DE": "Fügt ein Feld für ///what3words-Adressen hinzu",
+      "en-GB": "Adds a field for ///what3words addresses"
+    },
+    "manufacturerLink": {
+      "de-DE": "https://vanwittlaer.de",
+      "en-GB": "https://vanwittlaer.de"
+    },
+    "supportLink": {
+      "de-DE": "https://vanwittlaer.de",
+      "en-GB": "https://vanwittlaer.de"
+    }
+  }
+}

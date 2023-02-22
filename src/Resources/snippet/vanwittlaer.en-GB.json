@@ -1,0 +1,9 @@
+{
+  "vanwittlaer": {
+    "w3w": {
+      "label": "what3words address (optional)",
+      "placeholder": "e.g. ///lock.spout.radar",
+      "invalid_address_error_message": "No valid w3w address found"
+    }
+  }
+}
