@@ -1,6 +1,7 @@
 {
   "vanwittlaer": {
     "w3w": {
+      "helpText": "A what3words address will allow us to more reliably deliver your shipment. To find your what3words address visit <a href=\"https://www.what3words.com/\" target=\"_blank\">what3words.com</a>.",
       "label": "what3words address (optional)",
       "placeholder": "e.g. ///lock.spout.radar",
       "invalid_address_error_message": "No valid w3w address found"

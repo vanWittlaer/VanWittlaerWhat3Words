@@ -25,5 +25,8 @@
                        value="{{ data.get('customFields')['what3words'] }}"
                 >
             </what3words-autosuggest>
+            <small class="form-text">
+                {{ 'vanwittlaer.w3w.helpText'|trans|sw_sanitize }}
+            </small>
         </div>
 {% endblock %}
