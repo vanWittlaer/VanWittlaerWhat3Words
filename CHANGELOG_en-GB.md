@@ -1,3 +1,6 @@
+# 1.1.1
+* Switch to w3w javascript component version 4.2.2
+
 # 1.1.0
 * Switch to w3w javascript component version 4.1.6 
 

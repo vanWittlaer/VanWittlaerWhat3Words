@@ -2,7 +2,7 @@
   "name": "vanwittlaer/what3words",
   "description": "Add a ///what.3.words address field to customer address data and forms",
   "type": "shopware-platform-plugin",
-  "version": "1.0.2",
+  "version": "1.1.1",
   "authors": [
     {
       "name": "VanWittlaer GmbH"
